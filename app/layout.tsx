@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/assets/EZIRA LG transpt dark theme BG 3.svg', // ✅ default favicon
+    icon: '/EZIRA LG transpt dark theme BG 3.svg', // ✅ default favicon
     shortcut: '/EZIRA.png', // ✅ optional
     apple: '/EZIRA.png', // ✅ iOS support
   },
