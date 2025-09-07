@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -31,6 +32,11 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+const logoSrc =
+  theme === "dark"
+    ? "/assets/EZIRA%20LG%20transpt%20%20dark%20theme%20BG%203.svg"
+    : "/assets/EZIRA%20LG%20transpt%20BG%201%20(3).svg";
+
 
   return (
     <motion.header
@@ -46,15 +52,21 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <motion.div
-            className="flex-shrink-0"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Link href="/" className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-              5D Solutions
-            </Link>
-          </motion.div>
+           <motion.div
+      className="flex-shrink-0"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <Link href="/" className="block">
+        <Image
+          src={logoSrc}
+          alt="EZIRA Logo"
+          width={200}
+          height={80}
+          priority
+        />
+      </Link>
+    </motion.div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">

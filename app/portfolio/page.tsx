@@ -266,7 +266,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <Footer />
+      <Footer isContact={true} />
     </div>
   );
 }

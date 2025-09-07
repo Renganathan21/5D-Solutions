@@ -86,7 +86,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">
-              About 5D Solutions
+              About EZIRA
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
               We're a passionate team of digital marketing experts dedicated to helping businesses 
@@ -201,7 +201,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-white dark:bg-gray-900">
+      {/* <section className="py-24 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-16"
@@ -257,7 +257,7 @@ export default function AboutPage() {
             ))}
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Stats Section */}
       <section className="py-24 bg-blue-600 dark:bg-blue-900">
@@ -304,7 +304,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Footer />
+      <Footer isContact={true} />
     </div>
   );
 }

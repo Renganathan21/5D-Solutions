@@ -8,21 +8,21 @@ import Script from 'next/script';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: '5D Solutions | Digital Marketing Agency',
-  description: 'Transform your digital presence with 5D Solutions. Expert SEO, Social Media Marketing, PPC, Content Marketing, and Web Development services.',
+  title: 'EZIRA | Digital Marketing Agency',
+  description: 'Transform your digital presence with EZIRA. Expert SEO, Social Media Marketing, PPC, Content Marketing, and Web Development services.',
   keywords: 'digital marketing, SEO, social media marketing, PPC, content marketing, web development, branding',
-  authors: [{ name: '5D Solutions' }],
+  authors: [{ name: 'EZIRA' }],
   openGraph: {
-    title: '5D Solutions | Digital Marketing Agency',
-    description: 'Transform your digital presence with 5D Solutions. Expert digital marketing services to grow your business online.',
-    url: 'https://5dsolutions.com',
-    siteName: '5D Solutions',
+    title: 'EZIRA | Digital Marketing Agency',
+    description: 'Transform your digital presence with EZIRA. Expert digital marketing services to grow your business online.',
+    url: 'https://EZIRA.com',
+    siteName: 'EZIRA',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: '5D Solutions | Digital Marketing Agency',
-    description: 'Transform your digital presence with 5D Solutions. Expert digital marketing services.',
+    title: 'EZIRA | Digital Marketing Agency',
+    description: 'Transform your digital presence with EZIRA. Expert digital marketing services.',
   },
   robots: {
     index: true,
@@ -34,6 +34,11 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+  icons: {
+    icon: '/assets/EZIRA LG transpt dark theme BG 3.svg', // ✅ default favicon
+    shortcut: '/EZIRA.png', // ✅ optional
+    apple: '/EZIRA.png', // ✅ iOS support
   },
 };
 
@@ -50,7 +55,7 @@ export default function RootLayout({
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "5D Solutions",
+            "name": "EZIRA",
             "description": "Digital Marketing Agency specializing in SEO, Social Media Marketing, PPC, and Web Development",
             "url": "https://5dsolutions.com",
             "logo": "https://5dsolutions.com/logo.png",

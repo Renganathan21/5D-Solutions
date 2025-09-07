@@ -345,7 +345,7 @@ function PortfolioSection() {
 function TestimonialsSection() {
   const testimonials = [
     {
-      content: "5D Solutions transformed our online presence completely. Our traffic increased by 400% in just 6 months, and our conversion rates doubled.",
+      content: "EZIRA transformed our online presence completely. Our traffic increased by 400% in just 6 months, and our conversion rates doubled.",
       name: "Sarah Johnson",
       title: "CEO, TechStart Inc.",
       image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150"
@@ -357,7 +357,7 @@ function TestimonialsSection() {
       image: "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=150"
     },
     {
-      content: "Working with 5D Solutions was a game-changer. They delivered results beyond our expectations and were incredibly professional throughout.",
+      content: "Working with EZIRA was a game-changer. They delivered results beyond our expectations and were incredibly professional throughout.",
       name: "Emily Rodriguez",
       title: "Founder, BrandBoost",
       image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150"
@@ -443,7 +443,7 @@ function CTASection() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
-            Join hundreds of successful businesses that have chosen 5D Solutions to drive their digital growth.
+            Join hundreds of successful businesses that have chosen EZIRA to drive their digital growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
@@ -470,9 +470,9 @@ export default function HomePage() {
       <HeroSection />
       <ServicesSection />
       <PortfolioSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <CTASection />
-      <Footer />
+      <Footer isContact={true} />
     </div>
   );
 }

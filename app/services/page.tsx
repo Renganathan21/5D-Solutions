@@ -238,7 +238,7 @@ export default function ServicesPage() {
                 <Card className="overflow-hidden bg-white dark:bg-gray-800 hover:shadow-2xl transition-all duration-300">
                   <CardContent className="p-0">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                      {/* Service Info */}
+                      
                       <div className="p-8 lg:p-12">
                         <div className="flex items-center mb-6">
                           <service.icon className="h-12 w-12 text-blue-600 dark:text-blue-400 mr-4" />
@@ -246,9 +246,9 @@ export default function ServicesPage() {
                             <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                               {service.title}
                             </h3>
-                            <div className="text-blue-600 dark:text-blue-400 font-semibold">
-                              {service.price}
-                            </div>
+                            {/* <div className="text-blue-600 dark:text-blue-400 font-semibold">
+                              {service.price} 
+                            </div> */}
                           </div>
                         </div>
                         
@@ -276,10 +276,8 @@ export default function ServicesPage() {
                         </Link>
                       </div>
 
-                      {/* Process & Deliverables */}
                       <div className="bg-gray-50 dark:bg-gray-900 p-8 lg:p-12">
                         <div className="space-y-8">
-                          {/* Process */}
                           <div>
                             <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Our Process:</h4>
                             <div className="space-y-3">
@@ -293,8 +291,6 @@ export default function ServicesPage() {
                               ))}
                             </div>
                           </div>
-
-                          {/* Deliverables */}
                           <div>
                             <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">You'll Receive:</h4>
                             <ul className="space-y-2">
@@ -348,7 +344,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <Footer />
+      <Footer isContact={true} />
     </div>
   );
 }
