@@ -329,7 +329,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <Footer />
+      <Footer isContact={true} />
     </div>
   );
 }
